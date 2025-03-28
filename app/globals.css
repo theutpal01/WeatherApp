@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.dark {
+	--primary: #111827;
+	--secondary: #1f2937;
+	--accent: #2f7af2;
+	--text-primary: #e5e7eb;
+	--text-secondary: #b4bac5;
+	--graph-highlight: #60a5fa;
+	--rainy: #6b7280;
+	--sunny: #fbbf24;
+	--windy: #60a5fa;
+}
+
+.light {
+	--primary: #e3e2de;
+	--secondary: #cfcec9;
+	--accent: #2f7af2;
+	--text-primary: #111827;
+	--text-secondary: #686762;
+	--graph-highlight: #60a5fa;
+	--rainy: #6b7280;
+	--sunny: #fbbf24;
+	--windy: #60a5fa;
+}
+
+@theme inline {
+	--color-primary: var(--primary);
+	--color-secondary: var(--secondary);
+	--color-accent: var(--accent);
+	--color-text-primary: var(--text-primary);
+	--color-text-secondary: var(--text-secondary);
+	--color-graph-highlight: var(--graph-highlight);
+	--color-rainy: var(--rainy);
+	--color-sunny: var(--sunny);
+	--color-windy: var(--windy);
+	/* --font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono); */
+}

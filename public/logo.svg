@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a237e" />
+      <stop offset="50%" stop-color="#311b92" />
+      <stop offset="100%" stop-color="#4a148c" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="boltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffeb3b" />
+      <stop offset="100%" stop-color="#ff9800" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main square background -->
+  <rect width="400" height="400" rx="60" ry="60" fill="url(#bgGradient)" />
+  
+  <!-- Background patterns -->
+  <g opacity="0.15">
+    <path d="M0,200 Q100,150 200,200 T400,200" stroke="white" stroke-width="8" fill="none" />
+    <path d="M0,240 Q100,190 200,240 T400,240" stroke="white" stroke-width="6" fill="none" />
+    <path d="M0,280 Q100,230 200,280 T400,280" stroke="white" stroke-width="4" fill="none" />
+  </g>
+  
+  <!-- Main cloud -->
+  <g transform="translate(200,200)" filter="url(#dropShadow)">
+    <ellipse cx="-70" cy="0" rx="75" ry="60" fill="#f5f5f5" opacity="0.95" />
+    <ellipse cx="0" cy="-20" rx="85" ry="70" fill="white" opacity="0.95" />
+    <ellipse cx="60" cy="5" rx="65" ry="55" fill="#f5f5f5" opacity="0.95" />
+    <ellipse cx="-10" cy="40" rx="70" ry="45" fill="#eeeeee" opacity="0.95" />
+  </g>
+  
+  <!-- Dramatic lightning bolt -->
+  <path d="M190,130 L165,215 L205,215 L160,300" stroke="url(#boltGradient)" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  
+  <!-- Rain drops with animation feel -->
+  <g opacity="0.9">
+    <path d="M120,240 C 115,270 110,290 105,315" stroke="#4fc3f7" stroke-width="6" stroke-linecap="round" />
+    <path d="M150,250 C 145,275 140,295 135,320" stroke="#4fc3f7" stroke-width="5" stroke-linecap="round" />
+    <path d="M180,245 C 175,265 170,285 165,310" stroke="#4fc3f7" stroke-width="7" stroke-linecap="round" />
+    <path d="M90,250 C 85,270 80,290 75,310" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" />
+    <path d="M220,255 C 215,275 210,295 205,315" stroke="#4fc3f7" stroke-width="5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Small snow crystals for dimension -->
+  <g fill="white" opacity="0.8">
+    <circle cx="250" cy="260" r="3" />
+    <circle cx="270" cy="280" r="2" />
+    <circle cx="260" cy="300" r="4" />
+    <circle cx="280" cy="250" r="3" />
+    <circle cx="290" cy="290" r="2" />
+  </g>
+  
+  <!-- Additional weather elements for balance -->
+  <g opacity="0.7">
+    <path d="M320,170 L335,185 M320,185 L335,170 M310,177 L345,177" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M50,130 L65,145 M50,145 L65,130 M40,137 L75,137" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M280,80 L295,95 M280,95 L295,80 M270,87 L305,87" stroke="white" stroke-width="3" stroke-linecap="round" />
+  </g>
+  
+  <!-- Central subtle glow to tie elements together -->
+  <circle cx="200" cy="200" r="150" fill="white" opacity="0.05" />
+</svg>
