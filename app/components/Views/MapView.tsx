@@ -9,7 +9,7 @@ const DynamicMap = dynamic(() => import("./ActualMapView"), {
 
 const MapView = () => {
 	return (
-		<div className="w-full h-full overflow-hidden rounded-2xl border-2 border-secondary">
+		<div className="w-full h-full overflow-hidden rounded-2xl border-2 border-secondary !z-0">
 			<DynamicMap />
 		</div>
 	);

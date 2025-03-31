@@ -32,7 +32,7 @@ const ProfileBtn = ({ className, name, profileImg = '', userName = 'U', children
 				}
 			</button>
 
-			<div className={`${active ? 'h-fit p-2.5' : 'h-0 p-0 overflow-hidden'} z-50 drop-shadow-sm absolute right-0 top-16 w-3/4 max-w-72 bg-secondary rounded-lg shadow-lg transition-all duration-300 ease-in-out`}>
+			<div className={`${active ? 'h-fit p-2.5' : 'h-0 p-0 overflow-hidden'} !z-50 *:z-50 drop-shadow-sm absolute right-0 top-16 w-full max-w-72 bg-secondary rounded-lg shadow-lg transition-all duration-300 ease-in-out`}>
 				{children}
 			</div>
 
